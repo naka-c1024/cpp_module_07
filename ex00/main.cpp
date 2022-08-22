@@ -49,5 +49,12 @@ int		main( void ) {
 
 	awesome_tests();
 
+	std::cout << "\n---- const tests ----" << std::endl;
+	const int	cnst1 = 42;
+	const int	cnst2 = -24;
+	std::cout << "cnst1 = " << cnst1 << ", cnst2 = " << cnst2 << std::endl;
+	std::cout << "min( cnst1, cnst2 ) = " << ::min( cnst1, cnst2 ) << std::endl;
+	std::cout << "max( cnst1, cnst2 ) = " << ::max( cnst1, cnst2 ) << std::endl;
+
 	return 0;
 }
